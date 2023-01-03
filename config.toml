@@ -1,0 +1,9 @@
+theme = "everforest_dark"
+
+[editor]
+line-number = "relative"
+auto-save = true
+bufferline = "multiple"
+
+[keys.normal]
+g = { x = ":buffer-close" }
