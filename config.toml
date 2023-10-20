@@ -1,4 +1,4 @@
-theme = "everforest_dark"
+theme = "github_dark_dimmed"
 
 [editor]
 line-number = "relative"

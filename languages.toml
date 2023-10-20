@@ -2,5 +2,13 @@
 name = "rust"
 auto-format = true
 
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
 [language-server.rust-analyzer.config.check]
 command = "clippy"
