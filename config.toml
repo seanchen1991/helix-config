@@ -3,7 +3,39 @@ theme = "everforest_dark"
 [editor]
 line-number = "relative"
 auto-save = true
-bufferline = "multiple"
+bufferline = "always"
+cursorline = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["version-control", "diagnostics", "position"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+separator = "|"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "⸽"
 
 [keys.normal]
-g = { x = ":buffer-close" }
+backspace = { b = ":buffer-close!" }
